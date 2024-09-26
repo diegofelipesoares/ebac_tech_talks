@@ -1,3 +1,28 @@
-body{
-    background-color: red;
+//Importações
+@use 'hero';
+
+// Reset
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+    color: #fff;
+}
+
+.container{
+    
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    //responsividade Celular
+    @media(max-width: 640px){
+        max-width: 80%;
+    }
+
+    //responsividade Tablet
+    @media(max-width: 1240px){
+        max-width: 90%;
+    }
 }
