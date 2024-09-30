@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Importanto CSS via parcel-->
     <link rel="stylesheet" href="styles/main.scss">
 </head>
@@ -23,9 +24,77 @@
             <p class="hero__text">
                 O maior evento de tecnologia do Brasil começa em 30d 17h 20min 56s
             </p>
+            <!-- Seção de informação e compra do ingresso -->
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2022 às 19h
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
 
+    <!-- SEÇÕES DE CONTEÚDO -->
+    <section class="event event--frontend" >
+        <!-- Container para definir a largura da pagina -->
+        <div class="container" data-aos="fade-right"> 
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil numquam voluptate? Molestias inventore, maxime perferendis eius distinctio reiciendis tempore nam impedit. Dolorum libero quibusdam perferendis soluta recusandae debitis quas.</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+
+    <section class="event event--ux-ui event--image_left" >
+        <!-- Container para definir a largura da pagina -->
+        <div class="container" data-aos="fade-left"> 
+            <div class="event__details">
+                <h2 class="event__details__title">UX / UI</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil numquam voluptate? Molestias inventore, maxime perferendis eius distinctio reiciendis tempore nam impedit. Dolorum libero quibusdam perferendis soluta recusandae debitis quas.</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+
+    <section class="event event--data-science">
+        <!-- Container para definir a largura da pagina -->
+        <div class="container" data-aos="fade-right"> 
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil numquam voluptate? Molestias inventore, maxime perferendis eius distinctio reiciendis tempore nam impedit. Dolorum libero quibusdam perferendis soluta recusandae debitis quas.</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image_left" >
+        <!-- Container para definir a largura da pagina -->
+        <div class="container" data-aos="fade-left"> 
+            <div class="event__details">
+                <h2 class="event__details__title">Back End</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil numquam voluptate? Molestias inventore, maxime perferendis eius distinctio reiciendis tempore nam impedit. Dolorum libero quibusdam perferendis soluta recusandae debitis quas.</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+
+    <!-- Importações do JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
+    
 </body>
 </html>

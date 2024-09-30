@@ -1,5 +1,9 @@
 //Importações
 @use 'hero';
+@use '../styles/components/infos_bar';
+@use '../styles/components/buttons';
+@use 'event';
+@use 'variables';
 
 // Reset
 *{
@@ -7,7 +11,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: roboto, sans-serif;
-    color: #fff;
+    color: variables.$textColor;
+    list-style: none; //retirando bullets
 }
 
 .container{

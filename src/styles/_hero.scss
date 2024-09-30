@@ -1,3 +1,5 @@
+@use 'variables';
+
 .hero{
     padding-top: 64px;
     padding-bottom: 100px;
@@ -5,33 +7,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  
-
     .container{
         /*tem que colocar o container como position
         relative para ele ficar acima do pseudo seletor*/
         position: relative;
     }
-
     /*criamos um pseudo elemento 
     em preto para escurecer a imagem de fundo*/
     &::before{
-        background-color: black;
+        background-color: variables.$secondaryTextColor;
         opacity: 50%;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        content: "";
         /* pseudo elementos precisam ter algum 
         contéudo para existir, por isso, colocamos
         o content vazio para que ele apareça */
-        
-    
-        
+        content: "";
     }
-
     &__text{
         margin-top: 64px;
         margin-bottom: 64px;
@@ -46,9 +41,7 @@
         display: block;
         margin: 0 auto;
         height: 80px;
-
     }
-
     @media (max-width: 640px){
         padding: 40px 0;;
         &__logo{
@@ -59,8 +52,6 @@
             font-size: 24px;
             font-weight: 700;
             margin: 24px 0;
-
-        }
-        
+        }      
     }
 }
