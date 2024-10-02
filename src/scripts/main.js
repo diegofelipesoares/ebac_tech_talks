@@ -1,3 +1,4 @@
+//Script para utilização de efeitos de transição
 AOS.init();
 
 //Criando data no futuro. 
